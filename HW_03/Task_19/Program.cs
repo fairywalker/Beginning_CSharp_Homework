@@ -4,8 +4,11 @@
 //23432 -> да
 
 Console.Write("Введите пятизначное число: ");
-string Number = Console.ReadLine();
+string? Number = Console.ReadLine();
 
-if (Number[0] == Number[4] && Number[1] == Number[3]) Console.WriteLine("да");    
+if (Number != null)
+{
+    if (Number[0] == Number[4] && Number[1] == Number[3]) Console.WriteLine("да");    
 
-else Console.WriteLine("нет");  
+    else Console.WriteLine("нет");  
+}
