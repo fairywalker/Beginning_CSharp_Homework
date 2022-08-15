@@ -25,7 +25,7 @@ for (int i = 0; i < matrix.GetLength(1); i++)
     int currentSum = 0;
     for (int j = 0; j < matrix.GetLength(0); j++)
     {
-        currentSum += matrix[j, i];        
+        currentSum += matrix[j, i];         
     } 
     result[i] = Math.Round((double)currentSum/m,1);   
 }
